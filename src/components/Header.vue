@@ -1,5 +1,6 @@
 <template>
-    <header class="fixed h-16 top-0 left-0 right-0 flex items-center p-4 bg-[#121212]">
+    <header
+        class="z-50 fixed h-16 top-0 left-0 right-0 flex items-center p-4 bg-[#121212] scrollbar-thumb-[#3e3e3e] scrollbar-track-transparent">
         <div class="container relative flex items-center justify-between mx-auto">
             <div class="text-3xl font-bold text-white">Uni Stream</div>
             <div>
@@ -174,7 +175,7 @@
                                     <div
                                         class="fixed inset-0 z-20 items-center justify-center hidden mx-auto text-white bg-black/30 backdrop-blur-sm peer-checked/modal_live:flex">
                                         <div
-                                            class="bg-[#121212] w-[800px]  rounded-xl outline outline-2 outline-[#383838]">
+                                            class="bg-[#121212] w-[800px]  rounded-xl outline outline-2 outline-[#383838] overflow-hidden">
                                             <div class="flex justify-end bg-black">
                                                 <label for="modal_live"
                                                     class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
@@ -235,7 +236,7 @@
                                     <div
                                         class="fixed inset-0 z-20 items-center justify-center hidden mx-auto text-white bg-black/30 backdrop-blur-sm peer-checked/modal_info:flex">
                                         <div
-                                            class="bg-[#121212] w-[600px]  rounded-xl outline outline-2 outline-[#383838] text-white">
+                                            class="bg-[#121212] w-[600px]  rounded-xl outline outline-2 outline-[#383838] text-white overflow-hidden">
                                             <div class="flex justify-end bg-black">
                                                 <label for="modal_info"
                                                     class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
