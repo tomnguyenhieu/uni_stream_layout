@@ -1,6 +1,6 @@
-import W01 from '@/views/W-01.vue'
-import W02 from '@/views/W-02.vue'
-import W03 from '@/views/W-03.vue'
+import W01 from '../views/W-01.vue'
+import W02 from '../views/W-02.vue'
+import W03 from '../views/W-03.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({

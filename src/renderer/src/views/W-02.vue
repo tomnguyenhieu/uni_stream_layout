@@ -16,9 +16,9 @@
                                 class="h-[500px] aspect-video object-cover group-hover:blur-sm transition-all duration-300 group-hover:brightness-75 group-hover:scale-105">
                             <div
                                 class="absolute inset-0 flex items-center justify-center text-6xl text-white transition-all duration-300 opacity-0 group-hover:opacity-100">
-                                <button class="hover:text-[#121212] transition-all duration-200">
-                                    <i class="fa-solid fa-play"></i>
-                                </button>
+                                <RouterLink to="/live" class="hover:text-[#121212] transition-all duration-200">
+                                    <FontAwesomeIcon icon="fa-solid fa-play" />
+                                </RouterLink>
                             </div>
                         </div>
                         <div
@@ -291,11 +291,13 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import Header from '../components/Header.vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
     components: {
-        Header
+        Header,
+        FontAwesomeIcon
     }
 }
 </script>

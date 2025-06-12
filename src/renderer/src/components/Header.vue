@@ -10,14 +10,14 @@
                     <div>
                         <input type="checkbox" id="notification" class="hidden peer/noti">
                         <label for="notification" class="text-2xl text-white cursor-pointer hover:opacity-75">
-                            <i class="fa-solid fa-bell"></i>
+                            <FontAwesomeIcon icon="fa-solid fa-bell" />
                         </label>
                         <div
                             class="z-10 absolute rounded-xl outline outline-2 outline-[#383838] top-16 right-16 text-white bg-[#121212] hidden peer-checked/noti:block pl-4 pr-2 py-2 w-[400px]">
                             <div class="flex justify-end">
                                 <label for="notification"
                                     class="p-2 text-xl text-white cursor-pointer hover:opacity-75">
-                                    <i class="fa-solid fa-xmark"></i>
+                                    <FontAwesomeIcon icon="fa-solid fa-xmark" />
                                 </label>
                             </div>
                             <ul
@@ -163,7 +163,7 @@
                             class="z-10 absolute rounded-xl outline outline-2 outline-[#383838] top-16 right-0 text-white bg-[#121212] hidden peer-checked/menu:block px-4 py-2">
                             <div class="flex justify-end">
                                 <label for="menu" class="p-2 text-xl text-white cursor-pointer hover:opacity-75">
-                                    <i class="fa-solid fa-xmark"></i>
+                                    <FontAwesomeIcon icon="fa-solid fa-xmark" />
                                 </label>
                             </div>
                             <ul class="flex flex-col gap-4 py-2 ml-2 mr-8 text-lg">
@@ -179,7 +179,7 @@
                                             <div class="flex justify-end bg-black">
                                                 <label for="modal_live"
                                                     class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
-                                                    <i class="fa-solid fa-xmark"></i>
+                                                    <FontAwesomeIcon icon="fa-solid fa-xmark" />
                                                 </label>
                                             </div>
                                             <h1 class="px-5 py-4 text-2xl font-bold">Đăng ký phiên live</h1>
@@ -240,7 +240,7 @@
                                             <div class="flex justify-end bg-black">
                                                 <label for="modal_info"
                                                     class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
-                                                    <i class="fa-solid fa-xmark"></i>
+                                                    <FontAwesomeIcon icon="fa-solid fa-xmark" />
                                                 </label>
                                             </div>
                                             <div class="flex flex-col gap-6 px-6 py-5">
@@ -281,9 +281,10 @@
                 <!-- End đã loggin -->
 
                 <!-- Start chưa loggin -->
-                <!-- <button
-                    class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 transition-all duration-200">Đăng
-                    nhập</button> -->
+                <!-- <RouterLink to="/login"
+                    class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 transition-all duration-200">
+                    Đăng nhập
+                </RouterLink> -->
                 <!-- End chưa loggin -->
             </div>
         </div>
@@ -291,7 +292,11 @@
 </template>
 
 <script>
-export default {
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+export default {
+    components: {
+        FontAwesomeIcon
+    }
 }
 </script>
